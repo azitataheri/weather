@@ -1,0 +1,194 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+
+.app-wrapper {
+    background-color: #130b2d;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+}
+
+#weather {
+    background-color: #462a9f;
+    border-radius: 30px;
+    height: 90vh;
+    background-size: cover;
+    position: relative;
+    -webkit-box-shadow: inset 0 1px 5px rgba(0,0,0,.075), 0 0 25px #33226b;
+    box-shadow: inset 0 1px 5px rgba(0,0,0,.075), 0 0 25px #33226b;
+    max-width: 530px;
+    display: block;
+    margin: 0 auto;
+}
+
+.w-search input{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #eee;
+    outline: none;
+    margin-top: 50px;
+    border-radius: 20px;
+    height: 40px;
+    padding-left: 20px;
+    caret-color: #eb1890;  
+    color: #fff;
+    font-size: 20px;
+}
+
+.w-search input[placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 0.5s 0.5s ease; 
+    text-indent: -100%;
+    opacity: 1;
+    color: #fff;
+ }
+
+ form{
+     position: relative;
+ }
+ button.send{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 40px;
+    height: 38px;
+    border-radius: 50%;
+    margin-top: 50px;
+    background-color: transparent;
+    background: url(../img/search.png) no-repeat right 10px center;
+    background-size: 30px;
+    border: none;
+ }
+
+ .current-data{
+    background-color: #b3b6bb;
+    border-radius: 5px;
+    color: #eb1890;
+    padding: 0 4px;
+    margin-left: 20px;
+    font-weight:700;
+    cursor: pointer;
+ }
+ .w-deg{
+     font-size: 90px;
+     color: #fff;
+     font-weight:700;
+ }
+
+ .w-temp a{
+     color: #fff;
+     padding: 0 3px;
+     font-size: 28px;
+     color: #eb1890;
+     font-weight: 700;
+     text-decoration: none;
+ }
+
+ .w-temp span.seprator{
+     color: #8a6de9;
+ }
+
+ ul.date {
+    background-color: #eb1890;
+     width: 170px;
+     height: 130px;
+     border-radius: 30px 0 0 30px;
+     position: absolute;
+     right: 0;
+     top: 25%;
+     padding-top: 10px; 
+ }
+
+    ul.date  li{
+    list-style: none;
+    font-size: 20px;
+    color: #fff;
+ }
+
+ .w-footer{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    background-color: rgb(192, 192, 192);
+    border-radius: 40px;
+ }
+
+ .season-img{
+     position: absolute;
+     top: 56.2%;
+     right: -2%;
+     height: 200px;
+     float: right;
+     width: 275px;
+ }
+
+
+ ul.w-dependency{
+     list-style: none;
+     color: #3b2485;
+     font-weight: 700;
+     font-size: 20px;
+     background-color: #eee;
+     width: 190px;
+     height: 130px;
+     border-radius: 0 30px 30px 0;
+     position: absolute;
+     left: 0;
+     top: 41%;
+     padding-top: 15px;
+ }
+
+ .content{
+     position: absolute;
+     top: 50%;
+     left: 48%;
+     transform: translate(-50%,-50%);
+     width: 80%;
+ }
+
+ .days-temp ul{
+    list-style: none;
+    text-align: center;
+}
+
+.days-temp ul li{
+    font-weight: 700;
+}
+
+
+.text-purple{
+    color: #543da0;
+}
+.select-day{
+    border-radius: 30px;
+    padding: 7px;
+    border: 2px solid #999;
+    border: none;
+    background-color: #eb1890;
+    color: #fff;
+}
+
+
+/* media */
+@media screen and (max-width: 768px){
+    #weather{
+        width: 100%;
+    }
+    .season-img{
+        display: none;
+    }
+}
