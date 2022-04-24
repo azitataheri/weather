@@ -27,6 +27,9 @@ h1{
     color: #fff;
     text-decoration: none;
     font-weight: 700;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
 }
 
 .github-link img{
