@@ -204,7 +204,7 @@ h1{
         display: none;
     }
 
-    .app-wrapper {
-        flex-direction: column;
+    .github-link {
+        display: none;
     }
 }
